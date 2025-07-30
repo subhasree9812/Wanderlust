@@ -18,7 +18,7 @@ router.route("/signup")
 .get(userController.renderSignupForm)
 .post( wrapAsync(userController.signup));
 
-router.get("/login" , userController.renderLoginForm);
+// router.get("/login" , userController.renderLoginForm);
 
 router.post("/login",
     saveRedirectUrl,
